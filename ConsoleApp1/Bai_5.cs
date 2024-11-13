@@ -10,17 +10,23 @@ namespace ConsoleApp1
     [TestFixture]
     public class Bai_5
     {
+        public NguoiDung nd;
+
+        [SetUp]
+        public void khoitao()
+        {
+            nd = new NguoiDung();
+        }
 
         [Test]
-        [TestCase("Nghia",ExpectedResult = true)]
+        [TestCase("Nghia", ExpectedResult = true)]
+        [TestCase("An", ExpectedResult = false)]
         public bool XuatTen(string ten)
         {
-            NguoiDung truyvan = new NguoiDung();
-
-            return truyvan.listnguoidung.Any(a => a.ten == ten);
+            // Tìm thấy người dùng thì trả về true / ngược lại thì false
+            return nd.listnguoidung.Any(a => a.ten == ten);
         }
     }
-
 
 
     // Khởi tạo class người dùng chứa danh sách người dùng

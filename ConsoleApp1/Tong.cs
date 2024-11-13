@@ -21,8 +21,22 @@ namespace ConsoleApp1
     {
 
         [Test]
+        // a: 1 -> 10
+        // b: 1 -> 10
         // Kỹ thuật phân vùng biên
+        [TestCase(1, 10, ExpectedResult = 11)]
+        [TestCase(10, 1, ExpectedResult = 11)]
+        [TestCase(9, 9, ExpectedResult = 18)]
+        [TestCase(8, 8, ExpectedResult = 16)]
         [TestCase(1, 2, ExpectedResult = 3)]
+        [TestCase(3, 3, ExpectedResult = 6)]
+
+        // Kỹ thuật phân vùng tương đương
+        [TestCase(3, 4, ExpectedResult = 7)]
+        [TestCase(6, 7, ExpectedResult = 13)]
+        [TestCase(5, 3, ExpectedResult = 8)]
+
+
         [TestCase(1, 2.4, ExpectedResult = null)]
         public int? tong(object a, object b)
         {

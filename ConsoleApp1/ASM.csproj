@@ -73,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bai_5.cs" />
+    <Compile Include="KiemTraPhanTu.cs" />
     <Compile Include="Phep_Chia.cs" />
     <Compile Include="Tong.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
