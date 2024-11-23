@@ -72,18 +72,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bai_5.cs" />
-    <Compile Include="KiemTraPhanTu.cs" />
-    <Compile Include="Phep_Chia.cs" />
-    <Compile Include="Tong.cs" />
+    <Compile Include="0Bai2_Services.cs" />
+    <Compile Include="Bai1_Test\Hieu.cs" />
+    <Compile Include="Bai1_Test\TBC.cs" />
+    <Compile Include="Bai1_Test\Tich.cs" />
+    <Compile Include="Bai1_Test\Tong.cs" />
+    <Compile Include="0Bai1_Services.cs" />
+    <Compile Include="Bai1_Test\TruyXuatPhanTuTrongMang.cs" />
+    <Compile Include="Bai2_Test\Them_Sinh_Vien.cs" />
+    <Compile Include="Bai2_Test\TimKiemTheoMSV.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TBC.cs" />
-    <Compile Include="TruyXuatPhanTu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
