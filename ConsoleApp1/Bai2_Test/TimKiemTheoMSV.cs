@@ -21,7 +21,7 @@ namespace ConsoleApp1.Bai2_Test
         [Test]
         // YC: Ký tự độ dài không được vượt quá 10 ký tự, tối thiểu 1 ký tự
         // Kỹ thuật phân vùng tương đương (10 testcase)
-        [TestCase("Ma2", ExpectedResult = true)]
+        [TestCase("Ma2", ExpectedResult = true)] 
         [TestCase("Ma3", ExpectedResult = true)]
         [TestCase("Ma4", ExpectedResult = true)]
         [TestCase("Ma5", ExpectedResult = true)]
